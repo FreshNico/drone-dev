@@ -1801,11 +1801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: leftSpeed
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: riseSpeed
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: stability
@@ -1813,15 +1813,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: lowerSpeed
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: rightSpeed
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: acceleration
-      value: 0.2
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: deceleration
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: forwardSpeed
@@ -56377,6 +56381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GATE_ PLSTC_Square45
       objectReference: {fileID: 0}
+    - target: {fileID: 1184813441853266, guid: 526822940d9a66f47b07285706bb7040, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4816013273771232, guid: 526822940d9a66f47b07285706bb7040, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -57137,6 +57145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GATE_ PLSTC_Hex
       objectReference: {fileID: 0}
+    - target: {fileID: 1780121308876936, guid: 969bfa87b0d1b0d40a4869eb40e6af1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4934507807984452, guid: 969bfa87b0d1b0d40a4869eb40e6af1c, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -57192,6 +57204,10 @@ PrefabInstance:
     - target: {fileID: 4934507807984452, guid: 969bfa87b0d1b0d40a4869eb40e6af1c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23075832836850130, guid: 969bfa87b0d1b0d40a4869eb40e6af1c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23075832836850130, guid: 969bfa87b0d1b0d40a4869eb40e6af1c, type: 3}
       propertyPath: m_Materials.Array.data[0]
