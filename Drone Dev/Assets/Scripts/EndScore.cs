@@ -3,9 +3,7 @@ using UnityEngine;
 
 public class EndScore : MonoBehaviour
 {
-
     public Text scoreText;
-    
 
 
     public void Update()
