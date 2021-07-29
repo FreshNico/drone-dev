@@ -2194,7 +2194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1791630252698936, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_Name
-      value: Drone [Camera] (1)
+      value: QuadDroneCam
       objectReference: {fileID: 0}
     - target: {fileID: 1791630252698936, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_IsActive
@@ -2206,43 +2206,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 175.2
+      value: 175.57
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.96
+      value: 14.53
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -101.61
+      value: -100.5
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.14770365
+      value: 0.14962193
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.019867735
+      value: -0.016419781
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.97240984
+      value: -0.9812231
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.17946616
+      value: 0.12060247
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 20.07
+      value: 13.401
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -161.735
+      value: -162.187
       objectReference: {fileID: 0}
     - target: {fileID: 4006258145897648, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 5.6
+      value: 4.027
       objectReference: {fileID: 0}
     - target: {fileID: 20983873145844526, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
       propertyPath: field of view
@@ -15452,6 +15452,11 @@ Transform:
   m_Father: {fileID: 1628624562}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 140.60649, z: 0}
+--- !u!1 &276661396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1791630252698936, guid: 9fb71646028ac3c439c7f66106d7b95e, type: 3}
+  m_PrefabInstance: {fileID: 567374348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &278341512
 GameObject:
   m_ObjectHideFlags: 0
@@ -38349,7 +38354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114224000277654676, guid: 102b99c93b6fa4141b43ac9a82a68ed9, type: 3}
       propertyPath: stability
-      value: 0.28
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114224000277654676, guid: 102b99c93b6fa4141b43ac9a82a68ed9, type: 3}
       propertyPath: lowerSpeed
@@ -38361,7 +38366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114224000277654676, guid: 102b99c93b6fa4141b43ac9a82a68ed9, type: 3}
       propertyPath: acceleration
-      value: 0.77
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114224000277654676, guid: 102b99c93b6fa4141b43ac9a82a68ed9, type: 3}
       propertyPath: forwardSpeed
@@ -38698,6 +38703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drone: {fileID: 1757228451}
   drone2: {fileID: 288593501}
+  firstcam: {fileID: 276661396}
   switched: {fileID: 288593502}
   switchCam: {fileID: 663419809}
 --- !u!65 &1245509724

@@ -8,7 +8,8 @@ public class CoinPickup : MonoBehaviour
     public static int collectable = 0;
     public GameObject drone;
     public GameObject drone2;
-    
+
+    public GameObject firstcam;
     public Switched switched;
     public SwitchedCam switchCam;
 
@@ -18,9 +19,11 @@ public class CoinPickup : MonoBehaviour
         {
             
             collectable += 1;
-            Debug.Log("Coin Picked Up!" + collectable);
+            
             //Instantiate(drone2,transform.position, transform.rotation);
+
             Destroy(drone);
+            Destroy(firstcam);
             switched.Switch();
             switchCam.SwitchCam();
             
