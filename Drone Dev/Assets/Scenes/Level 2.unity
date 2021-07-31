@@ -1714,12 +1714,20 @@ PrefabInstance:
       value: Mouse X
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _turn
+      value: Mouse X
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: inputType
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: riseLower
-      value: Lift
+      value: NewLift
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _riseLower
+      value: NewLift
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: cameraTilt
@@ -1730,7 +1738,19 @@ PrefabInstance:
       value: Mouse X
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _cameraTilt
+      value: Mouse ScrollWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _cameraTurn
+      value: Mouse X
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: toggleMotor
+      value: Z
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _toggleMotor
       value: Z
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
@@ -1742,16 +1762,36 @@ PrefabInstance:
       value: H
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _cameraFreeLook
+      value: LeftAlt
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _toggleHeadless
+      value: H
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: cameraRiseLower
       value: Mouse Y
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: forwardBackward
-      value: Vertical
+      value: NewVerticle
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: strafeLeftRight
-      value: Horizontal
+      value: NewHorizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _cameraRiseLower
+      value: Mouse Y
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _forwardBackward
+      value: NewVertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _strafeLeftRight
+      value: NewHorizontal
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: toggleCameraGyro
@@ -1763,6 +1803,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: toggleFollowMode
+      value: F
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _toggleCameraGyro
+      value: G
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _toggleCameraMode
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194610146817586, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: _toggleFollowMode
       value: F
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}

@@ -13,9 +13,6 @@ public class GameManager : MonoBehaviour
         completeLevelUI.SetActive(true);
         Invoke("RestartCourse", restartDelay);
         
-        
-
-
 
     }
 
@@ -23,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     {
         levelCount++;
+        Scoreboard.score = 0;
         Debug.Log("Attempt Number: " + levelCount);
 
         if (levelCount == 2)
