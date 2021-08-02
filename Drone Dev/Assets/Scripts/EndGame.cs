@@ -8,7 +8,7 @@ public class EndGame : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
 
-            Application.Quit();
+            
         }
     }
 

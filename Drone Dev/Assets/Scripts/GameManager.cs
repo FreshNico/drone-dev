@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour
    
     public GameObject completeLevelUI;
     private static int levelCount = 0;
-    private float restartDelay = 2f;
+    private float restartDelay = 3f;
+    public static int firstScore = 0;
+    public static int secondScore = 0;
+    public static int adaptedScore = 0;
 
     public void CompleteLevel()
     {
@@ -20,10 +23,25 @@ public class GameManager : MonoBehaviour
 
     {
         levelCount++;
-        Scoreboard.score = 0;
+       
         Debug.Log("Attempt Number: " + levelCount);
 
+        if (levelCount == 1)
+        {
+            firstScore = Scoreboard.score;
+        }
         if (levelCount == 2)
+        {
+            secondScore = Scoreboard.score;
+        }
+        if(levelCount == 3)
+        {
+            adaptedScore = Scoreboard.score;
+        }
+
+        Scoreboard.score = 0;
+
+        if (levelCount == 2 || levelCount == 3)
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

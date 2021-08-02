@@ -7,6 +7,7 @@ public class EnterTrigger : MonoBehaviour
 
     public void OnTriggerEnter(Collider collision)
     {
+
         if (collision.transform.tag == "Player")
         {
            
