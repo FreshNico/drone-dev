@@ -1810,6 +1810,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
+      propertyPath: turnSensitivty
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357158756123940, guid: 1089eb9231d2f55468aec2916e14ba77, type: 3}
       propertyPath: fallAfterCollision
       value: 0
       objectReference: {fileID: 0}
@@ -3327,7 +3331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 464, y: 211.16}
+  m_AnchoredPosition: {x: 310, y: 228.59}
   m_SizeDelta: {x: 229.3786, y: 109.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169870858
@@ -9142,8 +9146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531.5835, y: 232.18}
-  m_SizeDelta: {x: 158.0961, y: 135.65}
+  m_AnchoredPosition: {x: -347, y: 245}
+  m_SizeDelta: {x: 158.0961, y: 142.1124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208098306
 MonoBehaviour:

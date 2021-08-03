@@ -4,40 +4,31 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RegularTimer : MonoBehaviour
+public class AdaptedTimer : MonoBehaviour
 {
 
-    public float timeValue = 50;
+    public float timeValue = 40;
     private float restartDelay = 3f;
-
-
     public Text timerText;
 
     public void Update()
     {
+        
+            if (timeValue > 0)
+            {
+                timeValue -= Time.deltaTime;
+            }
+            else
+            {
+                timeValue = 0;
 
 
+                Invoke("Restart", restartDelay);
 
-        if (timeValue > 0)
-        {
+            }
 
-            timeValue -= Time.deltaTime;
-
-        }
-        else
-        {
-            timeValue = 0;
-
-
-            Invoke("Restart", restartDelay);
-
-        }
-
-        DisplayTime(timeValue);
-
-
-
-
+            DisplayTime(timeValue);
+       
 
     }
 
@@ -47,8 +38,6 @@ public class RegularTimer : MonoBehaviour
         {
             timeToDisplay = 0;
         }
-
-
         else
         {
             float mins = 0;
@@ -65,12 +54,10 @@ public class RegularTimer : MonoBehaviour
 
 
 
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Scoreboard.score = 0;
     }
-
-
 }
-
