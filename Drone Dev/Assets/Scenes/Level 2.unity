@@ -49913,7 +49913,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0:40
+  m_Text: 0:50
 --- !u!222 &1775297032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49934,7 +49934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b8b6bd806204329b2d77940b66503a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 40
+  timeValue: 50
   timerText: {fileID: 1775297031}
 --- !u!1 &1777361571
 GameObject:
