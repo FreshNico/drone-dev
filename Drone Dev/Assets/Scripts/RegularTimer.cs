@@ -8,7 +8,7 @@ public class RegularTimer : MonoBehaviour
 {
 
     public float timeValue = 50;
-    private float restartDelay = 3f;
+    private float restartDelay = 2f;
 
 
     public Text timerText;

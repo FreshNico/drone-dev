@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnterTrigger : MonoBehaviour
 {
-
+    public AudioSource playSound;
     public void OnTriggerEnter(Collider collision)
     {
 
@@ -12,6 +12,12 @@ public class EnterTrigger : MonoBehaviour
         {
            
             Scoreboard.score += 1;
+            playSound.Play();
+            //Stops the counting of points
+            Destroy(this);
+
+
+
         }
     }
 

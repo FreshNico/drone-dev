@@ -9,7 +9,7 @@ public class AdaptedEndScore : MonoBehaviour
 
     public void Update()
     {
-        adaptedValue.text = GameManager.adaptedScore.ToString();
+        adaptedValue.text = GameManager.firstadaptedScore.ToString();
 
 
     }
