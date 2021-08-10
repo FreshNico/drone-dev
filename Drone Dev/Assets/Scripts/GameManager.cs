@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public static int secondScore = 0;
     public static int firstadaptedScore = 0;
     public static int secondadaptedScore = 0;
+    
+    
 
     public void CompleteLevel()
     {

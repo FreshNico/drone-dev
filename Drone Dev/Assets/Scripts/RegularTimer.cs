@@ -7,59 +7,33 @@ using UnityEngine.UI;
 public class RegularTimer : MonoBehaviour
 {
 
-    public float timeValue = 50;
-    private float restartDelay = 2f;
-
-
+    public float timeValue = 0;
+    //private float restartDelay = 2f;
     public Text timerText;
 
     public void Update()
     {
 
 
-
-        if (timeValue > 0)
-        {
-
-            timeValue -= Time.deltaTime;
-
-        }
-        else
-        {
-            timeValue = 0;
-
-
-            Invoke("Restart", restartDelay);
-
-        }
-
+        timeValue += Time.deltaTime;
         DisplayTime(timeValue);
-
-
-
 
 
     }
 
+    private void Awake()
+    {
+        
+    }
+
     public void DisplayTime(float timeToDisplay)
     {
-        if (timeToDisplay < 0)
-        {
-            timeToDisplay = 0;
-        }
 
+        float mins = 0;
+     
 
-        else
-        {
-            float mins = 0;
-            //Calculate minutes but I do not think we will be needing minutes for the current course
-            //mins = Mathf.FloorToInt(timeToDisplay / 60);
-
-            float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-            timerText.text = string.Format("{0:00}:{1:00}", mins, seconds);
-
-        }
-
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", mins, seconds);
 
     }
 
