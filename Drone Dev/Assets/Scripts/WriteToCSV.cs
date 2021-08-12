@@ -1,9 +1,12 @@
 using System.IO;
+using System;
 using UnityEngine;
 
 public class WriteToCSV : MonoBehaviour
 {
     string filename = "";
+    public float currentTime;
+    
 
 
 
@@ -20,15 +23,14 @@ public class WriteToCSV : MonoBehaviour
 
     public void WriteCSV()
     {
+        currentTime = currentTime + Time.deltaTime;
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);
 
-        TextWriter tw = new StreamWriter(filename, false);
-        tw.WriteLine("ID,First Score, Second Score, First Adapted Score, Second Adapted Score");
-        tw.WriteLine(ReadInputCode.input + "," + GameManager.firstScore +"," + GameManager.secondScore + "," +
-             GameManager.firstadaptedScore + "," + GameManager.secondadaptedScore);
-        tw.WriteLine("ID, Time");
-        tw.WriteLine(ReadInputCode.input + "," + GameManager.startTime);
+        TextWriter tw = new StreamWriter(filename, true);
+        
+        tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Start Run" + "," + true + "," + RegularTimer.currentTime);
         tw.Close();
-
+        
 
     }
 }

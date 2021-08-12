@@ -1,4 +1,19 @@
-ID,First Score, Second Score, First Adapted Score, Second Adapted Score
-LOVE99,0,0,0,0
-ID, Time
-LOVE99,6.976039
+ID, Run, Adapted, Event, Event Data, Timestamp
+LOVE56,0,False,Start Run,True,0
+LOVE56,0,False,End Run,True,0
+LOVE56,0,False,Ground Collision,True,0
+LOVE56,0,False,Ring Complete,True,2.331788
+LOVE56,0,False,Ring Complete,True,4.5762
+LOVE56,0,False,Ground Collision,True,9.916306
+LOVE56,1,False,Start Run,True,13.07986
+LOVE56,1,False,End Run,True,0
+LOVE56,1,False,Ground Collision,True,0.01597592
+LOVE56,1,False,Ring Complete,True,2.695607
+LOVE56,1,False,Ring Complete,True,4.91152
+LOVE56,1,False,Ground Collision,True,9.951746
+LOVE56,2,True,Start Run,True,12.78352
+LOVE56,2,True,End Run,True,0
+LOVE56,2,True,Ring Complete,True,5.79212
+LOVE56,3,True,Start Run,True,14.08021
+LOVE56,3,True,End Run,True,0
+LOVE56,3,True,Ring Complete,True,2.379372

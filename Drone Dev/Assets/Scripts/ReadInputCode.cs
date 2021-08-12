@@ -7,10 +7,11 @@ using System.IO;
 public class ReadInputCode : MonoBehaviour
 {
     public static string input;
+    string filename = "";
     void Start()
     {
-       
-        
+
+        filename = Application.dataPath + "/test.csv";
     }
     void Update()
     {
@@ -19,14 +20,10 @@ public class ReadInputCode : MonoBehaviour
 
     public void ReadInput(string s)
     {
+        TextWriter tw = new StreamWriter(filename, false);
+        tw.WriteLine("ID, Run, Adapted, Event, Event Data, Timestamp");
+        tw.Close();
         input = s;
-        //string filename = "";
-        //filename = Application.dataPath + "/test.csv";
-
-        //TextWriter tw = new StreamWriter(filename, false);
-        //tw.WriteLine("ID");
-        //tw.WriteLine(input);
-        //tw.Close();
         Debug.Log(input);
   
 

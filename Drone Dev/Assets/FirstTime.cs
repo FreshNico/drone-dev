@@ -7,14 +7,9 @@ using UnityEngine;
 public class FirstTime : MonoBehaviour
 {
     public Text firstTime;
-    GameManager timer;
     
     public  void Update()
     {
-
-        firstTime.text = timer.timerText.ToString();
-        
-        
 
 
     }
