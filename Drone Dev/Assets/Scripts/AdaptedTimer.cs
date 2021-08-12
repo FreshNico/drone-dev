@@ -8,7 +8,6 @@ public class AdaptedTimer : MonoBehaviour
 {
 
     public float timeValue = 0;
-    //private float restartDelay = 2f;
     public Text timerText;
 
     public void Update()

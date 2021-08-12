@@ -21,10 +21,12 @@ public class WriteToCSV : MonoBehaviour
     public void WriteCSV()
     {
 
-        TextWriter tw = new StreamWriter(filename, true);
-        tw.WriteLine("ID, First Score, Second Score, First Adapted Score, Second Adapted Score");
-        tw.WriteLine(MainMenu.id + "," + GameManager.firstScore +"," + GameManager.secondScore + "," +
+        TextWriter tw = new StreamWriter(filename, false);
+        tw.WriteLine("ID,First Score, Second Score, First Adapted Score, Second Adapted Score");
+        tw.WriteLine(ReadInputCode.input + "," + GameManager.firstScore +"," + GameManager.secondScore + "," +
              GameManager.firstadaptedScore + "," + GameManager.secondadaptedScore);
+        tw.WriteLine("ID, Time");
+        tw.WriteLine(ReadInputCode.input + "," + GameManager.startTime);
         tw.Close();
 
 

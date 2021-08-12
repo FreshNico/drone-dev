@@ -24076,6 +24076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 149390354}
+  timerText: {fileID: 1775297031}
+  timeValue: 0
 --- !u!1 &628053058
 GameObject:
   m_ObjectHideFlags: 0
@@ -26704,7 +26706,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e73067155e47c4d36a2927cc2acfc898, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4f6617c580ec2424a96810e0b909d467, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -50077,7 +50079,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775297029}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55b8b6bd806204329b2d77940b66503a, type: 3}
   m_Name: 
@@ -51079,6 +51081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 149390354}
+  timerText: {fileID: 1775297031}
+  timeValue: 0
 --- !u!4 &1835539234
 Transform:
   m_ObjectHideFlags: 0

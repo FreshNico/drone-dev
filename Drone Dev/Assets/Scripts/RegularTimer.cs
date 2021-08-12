@@ -11,6 +11,9 @@ public class RegularTimer : MonoBehaviour
     //private float restartDelay = 2f;
     public Text timerText;
 
+
+    
+
     public void Update()
     {
 
@@ -21,10 +24,7 @@ public class RegularTimer : MonoBehaviour
 
     }
 
-    private void Awake()
-    {
-        
-    }
+  
 
     public void DisplayTime(float timeToDisplay)
     {

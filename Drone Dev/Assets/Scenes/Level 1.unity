@@ -3341,7 +3341,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169870856}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a053446855664c079d87c6e392fb3de, type: 3}
   m_Name: 
@@ -3381,7 +3381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0:00
+  m_Text: 0:00.00
 --- !u!222 &169870860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24100,6 +24100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 149390354}
+  timerText: {fileID: 169870859}
 --- !u!1 &628053058
 GameObject:
   m_ObjectHideFlags: 0
@@ -36113,7 +36114,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e73067155e47c4d36a2927cc2acfc898, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4f6617c580ec2424a96810e0b909d467, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -51254,6 +51255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 149390354}
+  timerText: {fileID: 169870859}
 --- !u!4 &1835539234
 Transform:
   m_ObjectHideFlags: 0
