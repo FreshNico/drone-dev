@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,44 +6,25 @@ using UnityEngine.UI;
 public class RegularTimer : MonoBehaviour
 {
 
-    public float timeValue = 0;
-    //private float restartDelay = 2f;
+    public float currentTime;
     public Text timerText;
 
 
-    
+    public void Start()
+    {
+        currentTime = 0;
+    }
 
     public void Update()
     {
-
-
-        timeValue += Time.deltaTime;
-        DisplayTime(timeValue);
+        currentTime = currentTime + Time.deltaTime;
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);
+        timerText.text = time.ToString(@"m\:ss\:ff");
 
 
     }
 
   
-
-    public void DisplayTime(float timeToDisplay)
-    {
-
-        float mins = 0;
-     
-
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", mins, seconds);
-
-    }
-
-
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Scoreboard.score = 0;
-    }
-
 
 }
 

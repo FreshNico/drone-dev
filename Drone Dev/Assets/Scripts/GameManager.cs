@@ -34,23 +34,23 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        startTime = 0;
+       // startTime = 0;
 
     }
 
 
 
-    public void Update()
-    {
-        startTime = startTime + Time.deltaTime;
-        TimeSpan timePlaying = TimeSpan.FromSeconds(startTime);
-        timerText.text = timePlaying.ToString(@"m\:ss\:ff"); 
+    //public void Update()
+    //{
+    //    startTime = startTime + Time.deltaTime;
+    //    TimeSpan timePlaying = TimeSpan.FromSeconds(startTime);
+    //    timerText.text = timePlaying.ToString(@"m\:ss\:ff"); 
         
        
 
 
 
-    }
+    //}
 
     public void RestartCourse()
 
