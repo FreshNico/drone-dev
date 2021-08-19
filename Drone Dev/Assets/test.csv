@@ -1,91 +1,99 @@
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+ID, Run, Adapted, Event, Event Data, Timestamp
+ID-Nico,0,False,Start Run,True,0
+ID-Nico,0,False,FPS Avg,66,3.022528,
+ID-Nico,0,False,Ring Complete,1,3.022528
+ID-Nico,0,False,Collision,1,3.022528
+ID-Nico,0,False,FPS Avg,86,5.294816,
+ID-Nico,0,False,Ring Complete,2,5.294816
+ID-Nico,0,False,Ring Complete,3,8.338617
+ID-Nico,0,False,FPS Avg,72,8.338617,
+ID-Nico,0,False,Ring Complete,4,11.24656
+ID-Nico,0,False,FPS Avg,63,11.24656,
+ID-Nico,0,False,FPS Avg,78,16.13856,
+ID-Nico,0,False,Ring Complete,5,16.13856
+ID-Nico,0,False,FPS Avg,73,19.29454,
+ID-Nico,0,False,Ring Complete,6,19.29454
+ID-Nico,0,False,FPS Avg,86,21.74656,
+ID-Nico,0,False,Ring Complete,7,21.74656
+ID-Nico,0,False,FPS Avg,83,24.74261,
+ID-Nico,0,False,Ring Complete,8,24.74261
+ID-Nico,0,False,FPS Avg,65,28.26271,
+ID-Nico,0,False,Ring Complete,9,28.26271
+ID-Nico,0,False,FPS Avg,80,30.89854,
+ID-Nico,0,False,Ring Complete,10,30.89854
+ID-Nico,0,False,End Run,True,35.2465
+ID-Nico,0,False,Score,10,
+ID-Nico,1,False,Start Run,True,0
+ID-Nico,1,False,FPS Avg,68,2.107834,
+ID-Nico,1,False,Ring Complete,1,2.107834
+ID-Nico,1,False,FPS Avg,80,3.963657,
+ID-Nico,1,False,Ring Complete,2,3.963657
+ID-Nico,1,False,Ring Complete,3,7.023775
+ID-Nico,1,False,FPS Avg,81,7.023775,
+ID-Nico,1,False,Ring Complete,4,9.923379
+ID-Nico,1,False,FPS Avg,70,9.923379,
+ID-Nico,1,False,Collision,1,10.57931
+ID-Nico,1,False,FPS Avg,71,14.82363,
+ID-Nico,1,False,Ring Complete,5,14.82363
+ID-Nico,1,False,FPS Avg,75,18.01521,
+ID-Nico,1,False,Ring Complete,6,18.01521
+ID-Nico,1,False,FPS Avg,76,20.45977,
+ID-Nico,1,False,Ring Complete,7,20.45977
+ID-Nico,1,False,FPS Avg,76,23.52351,
+ID-Nico,1,False,Ring Complete,8,23.52351
+ID-Nico,1,False,FPS Avg,74,27.10748,
+ID-Nico,1,False,Ring Complete,9,27.10748
+ID-Nico,1,False,FPS Avg,64,29.67589,
+ID-Nico,1,False,Ring Complete,10,29.67589
+ID-Nico,1,False,End Run,True,34.03944
+ID-Nico,1,False,Score,10,
+ID-Nico,2,True,Start Run,True,0
+ID-Nico,2,True,FPS Avg,68,1.888664,
+ID-Nico,2,True,Ring Complete,1,1.888664
+ID-Nico,2,True,FPS Avg,80,3.788583,
+ID-Nico,2,True,Ring Complete,2,3.788583
+ID-Nico,2,True,FPS Avg,70,6.893089,
+ID-Nico,2,True,Ring Complete,3,6.893089
+ID-Nico,2,True,FPS Avg,73,9.732932,
+ID-Nico,2,True,Ring Complete,4,9.732932
+ID-Nico,2,True,FPS Avg,83,14.89289,
+ID-Nico,2,True,Ring Complete,5,14.89289
+ID-Nico,2,True,FPS Avg,81,17.74088,
+ID-Nico,2,True,Ring Complete,6,17.74088
+ID-Nico,2,True,FPS Avg,82,20.23303,
+ID-Nico,2,True,Ring Complete,7,20.23303
+ID-Nico,2,True,FPS Avg,69,23.29271,
+ID-Nico,2,True,Ring Complete,8,23.29271
+ID-Nico,2,True,FPS Avg,75,26.89274,
+ID-Nico,2,True,Ring Complete,9,26.89274
+ID-Nico,2,True,FPS Avg,85,29.47687,
+ID-Nico,2,True,Ring Complete,10,29.47687
+ID-Nico,2,True,End Run,True,33.7769
+ID-Nico,2,True,Score,10,
+ID-Nico,3,True,Start Run,True,0
+ID-Nico,3,True,Collision,1,0.6362054
+ID-Nico,3,True,Collision,2,0.699904
+ID-Nico,3,True,FPS Avg,75,2.816214,
+ID-Nico,3,True,Ring Complete,1,2.816214
+ID-Nico,3,True,FPS Avg,77,4.712457,
+ID-Nico,3,True,Ring Complete,2,4.712457
+ID-Nico,3,True,FPS Avg,85,7.820279,
+ID-Nico,3,True,Ring Complete,3,7.820279
+ID-Nico,3,True,FPS Avg,82,10.65244,
+ID-Nico,3,True,Ring Complete,4,10.65244
+ID-Nico,3,True,Collision,3,11.0683
+ID-Nico,3,True,Collision,4,11.71669
+ID-Nico,3,True,FPS Avg,74,15.8324,
+ID-Nico,3,True,Ring Complete,5,15.8324
+ID-Nico,3,True,FPS Avg,67,18.74051,
+ID-Nico,3,True,Ring Complete,6,18.74051
+ID-Nico,3,True,FPS Avg,73,21.20028,
+ID-Nico,3,True,Ring Complete,7,21.20028
+ID-Nico,3,True,FPS Avg,80,24.25638,
+ID-Nico,3,True,Ring Complete,8,24.25638
+ID-Nico,3,True,FPS Avg,72,27.86824,
+ID-Nico,3,True,Ring Complete,9,27.86824
+ID-Nico,3,True,FPS Avg,80,30.46041,
+ID-Nico,3,True,Ring Complete,10,30.46041
+ID-Nico,3,True,End Run,True,34.73651
+ID-Nico,3,True,Score,10,
