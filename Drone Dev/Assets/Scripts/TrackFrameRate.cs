@@ -2,33 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
+ 
 public class TrackFrameRate : MonoBehaviour
 {
-    string filename = "";
+
+    public static float timer, refresh, avgFramerate;
 
 
-    public void Track()
+    public void Update()
     {
-        filename = Application.dataPath + "/test.csv";
-        TextWriter tw = new StreamWriter(filename, true);
+     
 
-        int timefps = (int)RegularTimer.currentTime;
+        //FPS
+        float timeLapse = Time.smoothDeltaTime;
+        timer = timer <= 0 ? refresh : timer -= timeLapse;
 
-        Debug.Log("curent time: " + RegularTimer.currentTime);
-        Debug.Log("avg framerate: " + RegularTimer.avgFramerate);
+        if (timer <= 0) avgFramerate = (int)(1f / timeLapse);
 
-            
-            //tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "FPS Avg" + "," + RegularTimer.avgFramerate + "," + ",");
-
-
-
-
-
-       // tw.Close();
-
-
-
+        
     }
+
     
+
 }

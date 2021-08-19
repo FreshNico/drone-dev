@@ -19,9 +19,6 @@ public class ObjectCollision : MonoBehaviour
             groundCollCount++;
 
 
-            //tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Ground Collision" + "," + groundCollCount + "," + RegularTimer.currentTime);
-
-            //tw.Close();
         }
     }
 

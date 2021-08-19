@@ -13,7 +13,6 @@ public class RegularTimer : MonoBehaviour
     private float rd = 1.5f;
     public float bestT;
     public TimeSpan time;
-    public static float timer, refresh, avgFramerate;
 
     public void Start()
     {
@@ -32,13 +31,6 @@ public class RegularTimer : MonoBehaviour
         timerText.text = time.ToString(@"m\:ss\:ff");
         bestT = Time.time - currentTime;
 
-
-
-        //FPS
-            float timeLapse = Time.smoothDeltaTime;
-            timer = timer <= 0 ? refresh : timer -= timeLapse;
-
-            if (timer <= 0) avgFramerate = (int)(1f / timeLapse);
 
 
 
