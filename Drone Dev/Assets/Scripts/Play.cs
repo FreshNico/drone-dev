@@ -9,10 +9,10 @@ public class Play : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("space"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        //if (Input.GetKeyDown("space"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //}
         
     }
 }
