@@ -28,8 +28,9 @@ public class WriteToCSV : MonoBehaviour
 
         TextWriter tw = new StreamWriter(filename, true);
         
-        tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Start Run" + "," + true + "," + RegularTimer.currentTime);
+        tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Start Run" +","  + true +  "," + 0);
         tw.Close();
+        Destroy(this);
         
 
     }

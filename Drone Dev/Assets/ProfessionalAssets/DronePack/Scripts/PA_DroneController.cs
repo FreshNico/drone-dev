@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace PA_DronePack
@@ -106,6 +107,9 @@ namespace PA_DronePack
         private float oDrag;
         private float oADrag;
         #endregion
+        public int collCount = 0;
+        string filename = "";
+
 
         void Awake()
         {
@@ -118,6 +122,8 @@ namespace PA_DronePack
             oDrag = rigidBody.drag;                 // store the drone's rigidbody drag settings
             oADrag = rigidBody.angularDrag;         // store the drone's rigidbody angular drag settings
             #endregion
+
+            
         }
 
         private void Start()
@@ -213,15 +219,32 @@ namespace PA_DronePack
 
         void OnCollisionEnter(Collision newObject)
         {
+            filename = Application.dataPath + "/test.csv";
+            TextWriter tw = new StreamWriter(filename, true);
+
             #region Rigidbody Collisions, SoundFX
+            
+                
+                collCount++;
+
+
+                tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Collision" + "," + collCount + "," + RegularTimer.currentTime);
+
+                tw.Close();
+            
+
             collisionMagnitude = newObject.relativeVelocity.magnitude;                    // record the collision force applied to rigibody's axises
             if (collisionMagnitude > sparkMinimumForce)                                   // if the collision force is greater force than the spark threshold...
-            {                                                                             //
+            {
+                
+               
+
                 SpawnSparkPrefab(newObject.contacts[0].point);                            // spawn a spark prefab
                 if (sparkSound)                                                           // if we've assigned a spark sound... *** NoteToSelf: rename -> "collison sound" ***
                 {                                                                         //
                     sparkSound.pitch = collisionMagnitude * 0.1f;                         // alter it's pitch by a fraction of the collison force
                     sparkSound.PlayOneShot(sparkSound.clip, collisionMagnitude * 0.05f);  // play the spark sound and alter it's volume by a fraction of the collison force
+
                 }
             }
             if (collisionMagnitude > fallMinimumForce && fallAfterCollision)  // if the collision force is greater force than the fall threshold...
@@ -233,11 +256,18 @@ namespace PA_DronePack
 
         void OnCollisionStay(Collision newObject)
         {
+
+            
+
             #region Rigidbody Collisions
             if (groundDistance < coll.bounds.extents.y + 0.15f)         // if the drone is in contact with another object that is directly below it...
-            {                                                           //
+            {
+                
                 liftForce = Mathf.Clamp(liftForce, 0, Mathf.Infinity);  // stop the drone from lowering any further (prevents clipping through ground)
+                
+
             }
+            
             #endregion
         }
 

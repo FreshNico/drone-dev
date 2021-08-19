@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class EnterTrigger : MonoBehaviour
+public class CountRings : MonoBehaviour
 {
-    public AudioSource playSound;
-    public static int ringCount = 1;
-
 
     public void OnTriggerEnter(Collider collision)
     {
@@ -15,12 +12,17 @@ public class EnterTrigger : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
 
-            playSound.Play();
+            EnterTrigger.ringCount+= 1;
+            Scoreboard.score += 1;
+
+
+            //Stops the counting of points
+            Destroy(this);
+
 
 
         }
-
-        
     }
+
 
 }

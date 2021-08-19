@@ -12,19 +12,15 @@ public class RegularTimer : MonoBehaviour
     public Text timerText;
     private float rd = 1.5f;
     public float bestT;
-    string filename = "";
-    TimeSpan time;
+    public TimeSpan time;
+    public static float timer, refresh, avgFramerate;
 
     public void Start()
     {
        
-        filename = Application.dataPath + "/test.csv";
         
         Invoke("Update", rd);
-        Write();
         currentTime = 0;
-
-
 
 
     }
@@ -36,31 +32,19 @@ public class RegularTimer : MonoBehaviour
         timerText.text = time.ToString(@"m\:ss\:ff");
         bestT = Time.time - currentTime;
 
-        
-        
+
+
+        //FPS
+            float timeLapse = Time.smoothDeltaTime;
+            timer = timer <= 0 ? refresh : timer -= timeLapse;
+
+            if (timer <= 0) avgFramerate = (int)(1f / timeLapse);
 
 
 
     }
 
-    public void Write()
-    {
-        TextWriter tw = new StreamWriter(filename, true);
-
-
-
-        Debug.Log("delta Time " + Time.deltaTime);
-        Debug.Log("Time Time " + Time.time);
-        Debug.Log("current time: " + currentTime);
-        Debug.Log("bestT time: " + bestT);
-
-        
-        tw.WriteLine(ReadInputCode.input + ","+ GameManager.levelCount+ "," + GameManager.adaptedRun + "," + "End Run" + ","+ true + "," + 0.00);
-
-        tw.Close();
-
-
-    }
+   
 
   
 

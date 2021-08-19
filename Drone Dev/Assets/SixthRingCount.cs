@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class GroundCollision : MonoBehaviour
+public class SixthRingCount : MonoBehaviour
 {
     string filename = "";
+    int ringID = 6;
+
     public void OnTriggerEnter(Collider collision)
     {
         filename = Application.dataPath + "/test.csv";
         TextWriter tw = new StreamWriter(filename, true);
 
+
         if (collision.transform.tag == "Player")
         {
-
-            tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Ground Collision" + "," + true + ","+RegularTimer.currentTime);
+            tw.WriteLine(ReadInputCode.input + "," + GameManager.levelCount + "," + GameManager.adaptedRun + "," + "Ring Complete" + "," + ringID + "," + RegularTimer.currentTime);
 
             tw.Close();
 
 
+
+            //Stops the counting of points
+            Destroy(this);
+
+
+
         }
-
-           
-
-
-
-        }
-
-
     }
+
+
+}

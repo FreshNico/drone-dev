@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public static bool adaptedRun = false;
 
    
-    //string filename = "";
+    
 
     public void CompleteLevel()
     {
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     public void RestartCourse()
 
     {
-        //filename = Application.dataPath + "/test.csv";
+        
         levelCount++;
         
         Debug.Log("Attempt Number: " + levelCount);
@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
 
         }
         
-        // write.WriteCSV();
+     
     }
 
 
